@@ -12,7 +12,7 @@
 
 <hr>
 
-<h3>Sobre o projeto</h3>
+<h3>Sobre o projeto</h3><a href="https://edijunior88.github.io/NewTab_Academy_Projeto_Guiado_JavaScript/">https://edijunior88.github.io/NewTab_Academy_Projeto_Guiado_JavaScript/</a>
 
 <p>O objetivo é criar uma aplicação que tenha as seguintes funcionalidades:</p>
 
