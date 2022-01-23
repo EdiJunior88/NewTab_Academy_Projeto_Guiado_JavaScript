@@ -8,11 +8,11 @@
 
 <hr>
 
-<strong>Link do projeto:</strong>
+<strong>Link do projeto:</strong><a href="https://edijunior88.github.io/NewTab_Academy_Projeto_Guiado_JavaScript/">https://edijunior88.github.io/NewTab_Academy_Projeto_Guiado_JavaScript/</a>
 
 <hr>
 
-<h3>Sobre o projeto</h3><a href="https://edijunior88.github.io/NewTab_Academy_Projeto_Guiado_JavaScript/">https://edijunior88.github.io/NewTab_Academy_Projeto_Guiado_JavaScript/</a>
+<h3>Sobre o projeto</h3>
 
 <p>O objetivo é criar uma aplicação que tenha as seguintes funcionalidades:</p>
 
