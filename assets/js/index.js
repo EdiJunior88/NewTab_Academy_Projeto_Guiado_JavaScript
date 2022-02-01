@@ -21,6 +21,14 @@ var people = [
   }
 ]
 
+var peopleRaw = localStorage.getItem('people');
+if (peopleRaw != null) {
+  var people = JSON.parse(peopleRaw);
+}
+else {
+  var people = [];
+}
+
 function desenhaTabela() {  
   
   currentLines = [...document.querySelectorAll('table.lista tbody .dinamic-content')];
