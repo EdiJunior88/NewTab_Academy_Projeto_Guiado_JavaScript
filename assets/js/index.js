@@ -1,4 +1,4 @@
-var people = [
+/* var people = [
   {
     name: 'Fernando Henrique Caversan Santos Duro',
     tel: '14999999999',
@@ -19,7 +19,7 @@ var people = [
     tel: '14999999999',
     xp: true
   }
-]
+] */
 
 var peopleRaw = localStorage.getItem('people');
 if (peopleRaw != null) {
@@ -49,11 +49,17 @@ function desenhaTabela() {
         ${ (people[person].xp ? '<strong style = "color:green">Sim</strong>' : '<strong style = "color:red">Não</strong>') }
       </td>
       <td>
-        <button onclick="people.splice(${person}, 1); desenhaTabela();">Excluir</button>
+        <button onclick="deleteUser(${person})">Excluir</button>
       </td>
     </tr>
     `
   }
+}
+
+function deleteUser(p) {
+  people.splice(p, 1); 
+  desenhaTabela(); 
+  localStorage.setItem('people', JSON.stringify(people));
 }
 
 desenhaTabela();
