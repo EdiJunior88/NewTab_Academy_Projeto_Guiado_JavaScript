@@ -62,4 +62,6 @@ function deleteUser(p) {
   localStorage.setItem('people', JSON.stringify(people));
 }
 
+
+
 desenhaTabela();
