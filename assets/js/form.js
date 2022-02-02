@@ -9,11 +9,12 @@ function testaFormulario(e){
     var people = [];
   }
 
-  /* people.push({
+  people.push({
     name: e.target.elements['name'].value,
-    tel: e.target.elements['name'].value,
-    xp: ,
-  }); */
+    tel: e.target.elements['phone'].value,
+    xp: (e.target.elements['xp'].value == 'true')
+  })
 
-  console.log(e.target.elements['name'].value);
+  localStorage.setItem('people', JSON.stringify(people))
+  document.getElementById('goHome').click()
 }
