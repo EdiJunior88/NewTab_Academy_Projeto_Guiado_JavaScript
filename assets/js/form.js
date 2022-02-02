@@ -1,11 +1,16 @@
 function testaFormulario(e){
   e.preventDefault();
 
-  for(i in e.target.elements['phone'].value) {
-    if ('0123456789'.indexOf(e.target.elements['phone'].value[i]) == -1) {
-      alert('Apenas númeriso são permitidos no campo telefone!');
-      return false
-    }
+  // for(i in e.target.elements['phone'].value) {
+  //   if ('0123456789'.indexOf(e.target.elements['phone'].value[i]) == -1) {
+  //     alert('Apenas númeriso são permitidos no campo telefone!');
+  //     return false
+  //   }
+  // }
+
+  if (e.target.elements['phone'].value) {
+    alert('Apenas númeriso são permitidos no campo telefone!');
+    return false
   }
 
   if(e.target.elements['phone'].value.length < 11) {
