@@ -18,3 +18,5 @@ function testaFormulario(e){
   localStorage.setItem('people', JSON.stringify(people))
   document.getElementById('goHome').click()
 }
+
+//sessionStorage
