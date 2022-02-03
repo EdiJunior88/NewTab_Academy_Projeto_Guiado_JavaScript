@@ -8,12 +8,13 @@ function testaFormulario(e){
   //   }
   // }
 
-  if (e.target.elements['phone'].value) {
-    alert('Apenas númeriso são permitidos no campo telefone!');
+  var phonePattern = /[^0-9-() ]+/g
+  if (phonePattern.test(e.target.elements['phone'].value)) {
+    alert('Apenas números são permitidos no campo telefone!');
     return false
   }
 
-  if(e.target.elements['phone'].value.length < 11) {
+  if(e.target.elements['phone'].value.replace(/[-() ]/g, '').length < 11) {
     alert('Número inválido!');
     return false
   }
