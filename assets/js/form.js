@@ -71,3 +71,12 @@ if (id !== null) {
     document.getElementById('xp-no').checked = true
   }
 }
+
+function testaCampoTelefone(e) {
+  e.preventDefault()
+  console.log(e)
+  
+  if ((/[0-9 -()]/g).test(e.key)) {
+    e.target.value += e.key
+  }
+}
