@@ -75,8 +75,20 @@ if (id !== null) {
 function testaCampoTelefone(e) {
   e.preventDefault()
   console.log(e)
+
+  if (e.target.value.length == 0) {
+    e.target.value += '('
+  }
+
+  if (e.target.value.length == 3) {
+    e.target.value += ') '
+  }
+
+  if (e.target.value.length == 10) {
+    e.target.value += '-'
+  }
   
-  if ((/[0-9 -()]/g).test(e.key)) {
+  if ((/[0-9]/g).test(e.key) && e.target.value.length < 15) {
     e.target.value += e.key
   }
 }
